@@ -283,6 +283,51 @@ nav {
 .milestone-label { font-size: .88rem; color: #d4b89a; font-weight: 300; }
 .milestone-title { font-size: .95rem; color: var(--cream); font-weight: 500; }
 
+/* ── PENGALAMAN ORGANISASI ── */
+#pengalaman-organisasi { background: var(--warm-white); }
+
+.experience-layout {
+  display: grid; grid-template-columns: 1fr; gap: 2.5rem; justify-items: start;
+}
+
+.experience-item {
+  padding: 1.5rem; border: 1px solid var(--border);
+  border-radius: 6px; background: var(--cream);
+  transition: border-color .3s, box-shadow .3s, transform .3s;
+  animation: popIn .4s ease both;
+  max-width: 100%;
+  width: 100%;
+}
+
+.experience-item:hover {
+  border-color: var(--gold);
+  box-shadow: 4px 4px 12px var(--shadow);
+  transform: translateY(-2px);
+}
+
+.experience-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem; font-weight: 700; color: var(--brown);
+  margin-bottom: .5rem;
+}
+
+.experience-role {
+  font-size: .88rem; font-weight: 500; color: var(--gold);
+  letter-spacing: .05em; text-transform: uppercase;
+  margin-bottom: .4rem;
+}
+
+.experience-period {
+  font-size: .85rem; color: #8a7260;
+  margin-bottom: .8rem;
+  font-style: italic;
+}
+
+.experience-desc {
+  font-size: .95rem; color: #4a3822; line-height: 1.8;
+  text-align: justify;
+}
+
 /* ── TUGAS PANCASILA ── */
 #tugas { background: var(--warm-white); }
 
