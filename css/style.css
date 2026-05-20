@@ -45,6 +45,7 @@ nav {
   font-family: 'Playfair Display', serif;
   font-size: 1.4rem; font-weight: 900; color: var(--brown);
   letter-spacing: -0.5px;
+  margin-left: -2rem;
 }
 
 .nav-links { display: flex; gap: 2.5rem; list-style: none; }
@@ -432,6 +433,54 @@ nav {
 .btn-danger { background: #f0e8e8; color: var(--rust); }
 .btn-danger:hover { background: var(--rust); color: white; }
 
+/* ── SKILLS ── */
+#skills { background: var(--warm-white); }
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.skills-category {
+  width: 100%;
+}
+
+.skills-category-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem; font-weight: 700;
+  color: var(--brown); margin-bottom: 2rem;
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 1rem;
+}
+
+.skills-grid {
+  display: grid; grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.skill-item {
+  display: grid; grid-template-columns: auto 1fr;
+  gap: 1rem; align-items: start;
+}
+
+.skill-name {
+  font-size: .95rem; font-weight: 600;
+  color: var(--ink);
+  grid-column: 1;
+  white-space: nowrap;
+}
+.skill-description {
+  font-size: .85rem; color: var(--brown);
+  font-weight: 500; grid-column: 1 / -1;
+  background: rgba(200, 146, 42, 0.08);
+  border: 1px solid var(--gold-light);
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
 /* ── SERTIFIKAT ── */
 #sertifikat { background: var(--cream); }
 
@@ -558,6 +607,7 @@ footer span { color: var(--gold); }
   .hero-left { padding: 4rem 2rem 3rem; }
   .section { padding: 5rem 2rem; }
   .philosophy-grid, .goals-layout { grid-template-columns: 1fr; }
+  .skills-container { grid-template-columns: 1fr; gap: 3rem; }
 }
 
 @media (max-width: 600px) {
